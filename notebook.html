@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook | PET-Destroyer IITB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        /* Notebook Specific Styling */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: var(--light-navy);
+            top: 0; bottom: 0; left: 50%;
+            margin-left: -1px;
+        }
+
+        .entry {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .entry::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--bg);
+            border: 4px solid var(--teal);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left { left: 0; }
+        .right { left: 50%; }
+        .right::after { left: -10px; }
+
+        .content {
+            padding: 20px 30px;
+            background: var(--light-navy);
+            position: relative;
+            border-radius: 8px;
+            border: 1px solid var(--glass);
+        }
+
+        .date {
+            color: var(--teal);
+            font-family: var(--font-mono);
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo accent-text">IITB-iGEM</div>
+        <ul class="nav-links">
+            <li><a href="index.html">01. HOME</a></li>
+            <li><a href="description.html">02. PROJECT</a></li>
+            <li><a href="results.html">03. RESULTS</a></li>
+            <li><a href="notebook.html">04. NOTEBOOK</a></li>
+            <li><a href="team.html">05. TEAM</a></li>
+        </ul>
+    </nav>
+
+    <header style="padding: 120px 10% 0; text-align: center;">
+        <h1 class="accent-text">// LAB_JOURNAL_2025</h1>
+        <p>A transparent record of our experiments, failures, and breakthroughs.</p>
+    </header>
+
+    <div class="timeline">
+        <div class="entry left">
+            <div class="content">
+                <span class="date">JULY 05, 2025</span>
+                <h3>Project Brainstorming</h3>
+                <p>Initial meeting to discuss the "Plastic Crisis" in Mumbai. Decided to focus on <i>V. natriegens</i> due to its superior growth kinetics in high-salinity water environments.</p>
+            </div>
+        </div>
+
+        <div class="entry right">
+            <div class="content">
+                <span class="date">JULY 18, 2025</span>
+                <h3>Primers & G-Blocks Ordered</h3>
+                <p>Finalized the codon-optimized sequence for PETase (<i>Ideonella sakaiensis</i>). Primers arrived and were verified via nanodrop.</p>
+            </div>
+        </div>
+
+        <div class="entry left">
+            <div class="content">
+                <span class="date">AUGUST 02, 2025</span>
+                <h3>Plasmid Assembly (Gibson)</h3>
+                <p>Performed Gibson Assembly for the pET-22b(+) vector containing our PETase insert. Transformation into <i>E. coli</i> DH5α was successful.</p>
+                
+            </div>
+        </div>
+
+        <div class="entry right">
+            <div class="content">
+                <span class="date">AUGUST 14, 2025</span>
+                <h3>SDS-PAGE Analysis</h3>
+                <p>Induced expression with 0.5mM IPTG at 20°C. SDS-PAGE results show a strong band at ~30 kDa, confirming PETase production.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 IIT Bombay iGEM Team. View our protocols on <a href="#" style="color:var(--teal)">GitLab</a>.</p>
+    </footer>
+</body>
+</html>

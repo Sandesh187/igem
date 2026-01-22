@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | IITB iGEM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">IITB-iGEM</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="results.html" style="color: var(--accent-teal)">Results</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Experimental Data</h2>
+        <p style="margin-bottom: 30px;">Our biosensor showed a linear response to Lead concentrations.</p>
+
+        <div style="background: var(--bg-light); padding: 20px; border-radius: 10px; max-width: 800px; margin: 0 auto;">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <div class="grid" style="margin-top: 50px;">
+            <div class="card">
+                <h3>95% Sensitivity</h3>
+                <p>Achieved at 50ppb Lead concentration.</p>
+            </div>
+            <div class="card">
+                <h3>< 2 Hours</h3>
+                <p>Response time for visual fluorescence.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer><p>&copy; 2025 IIT Bombay iGEM Team</p></footer>
+    <script src="js/main.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['0h', '1h', '2h', '3h', '4h', '5h'],
+                datasets: [{
+                    label: 'Fluorescence Intensity (a.u.)',
+                    data: [12, 19, 30, 85, 120, 145],
+                    borderColor: '#64ffda',
+                    backgroundColor: 'rgba(100, 255, 218, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                scales: {
+                    y: { ticks: { color: '#8892b0' } },
+                    x: { ticks: { color: '#8892b0' } }
+                },
+                plugins: { legend: { labels: { color: '#e6f1ff' } } }
+            }
+        });
+    </script>
+</body>
+</html>

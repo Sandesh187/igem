@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | IITB-iGEM 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            PET-DESTROYER
+        </div>
+        
+        <!-- Hamburger Menu Button (MOVED BEFORE nav-links) -->
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            
+            <li class="dropdown">
+                <a href="description.html">Project ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="description.html">Description</a></li>
+                    <li><a href="project_overview.html">Overview</a></li>
+                    <li><a href="model.html">Modeling</a></li>
+                    <li><a href="results.html">Results</a></li>
+                    <li><a href="parts.html">Parts</a></li>
+                    <li><a href="notebook.html">Notebook</a></li>
+                </ul>
+            </li>
+
+            <li><a href="human-practices.html">Human Practices</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="collaboration.html">Collaboration</a></li>
+
+            <li class="dropdown">
+                <a href="team.html">Team ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="team.html">Members</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="judging_form.html" class="special-nav">Judging Form</a></li>
+        </ul>
+    </nav>
+
+    <header style="height: 100vh; display: flex; align-items: center; padding: 0 10%; margin-top: 85px;">
+        <div class="fade-in">
+            <p class="accent-text">Hello, we are IIT Bombay. Our project is</p>
+            <h1 class="typing-effect" style="font-size: clamp(2.5rem, 5vw, 4.5rem);">PET-DESTROYER</h1>
+            <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem); color: var(--ocean-surface);">Designing the future of plastic recycling.</h2>
+            <p style="max-width: 600px; margin: 20px 0 40px; color: var(--text-secondary);">We are engineering <i>Vibrio natriegens</i> with a high-efficiency secretome to break down microplastics into renewable carbon sources.</p>
+            <a href="description.html" class="btn">Explore the Design</a>
+        </div>
+    </header>
+
+    <section class="section" style="padding: 80px 10%;">
+        <div class="glass-card" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div class="reveal-element">
+                <h3 class="accent-text">The Problem</h3>
+                <h2>33 Million Tons of PET Annually</h2>
+                <p>Global PET production exceeds 33 million tons annually. Traditional recycling is energy-intensive and leads to "downcycling." Our biological solution targets the monomers directly.</p>
+                <ul style="margin-top: 20px; list-style: none;">
+                    <li style="margin: 10px 0;">
+                        <span class="bacteria-highlight">✓</span> 
+                        <strong>Faster degradation</strong> than chemical methods
+                    </li>
+                    <li style="margin: 10px 0;">
+                        <span class="bacteria-highlight">✓</span> 
+                        <strong>Lower energy costs</strong> at ambient temperatures
+                    </li>
+                    <li style="margin: 10px 0;">
+                        <span class="bacteria-highlight">✓</span> 
+                        <strong>Circular economy</strong> - monomers can be repolymerized
+                    </li>
+                </ul>
+            </div>
+            <div class="fig-container reveal-element">
+                <img src="images/petase-structure.png" alt="PETase Enzyme Structure" style="width: 100%; border-radius: 15px; box-shadow: var(--shadow-deep);">
+                <p style="text-align: center; margin-top: 15px; color: var(--text-dim); font-size: 0.9rem;">
+                    [3D structure of PETase enzyme breaking down PET polymer]
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section section" style="padding: 80px 10%; background: var(--glass-bg);">
+        <h2 class="text-center" style="margin-bottom: 60px;">Project Impact</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+            <div class="glass-card text-center reveal-element">
+                <h3 class="counter" data-target="500" style="font-size: 3rem; color: var(--bioluminescent);">0</h3>
+                <p class="accent-text">Hours of Research</p>
+            </div>
+            <div class="glass-card text-center reveal-element">
+                <h3 class="counter" data-target="15" style="font-size: 3rem; color: var(--bacteria-glow);">0</h3>
+                <p class="accent-text">Team Members</p>
+            </div>
+            <div class="glass-card text-center reveal-element">
+                <h3 class="counter" data-target="95" style="font-size: 3rem; color: var(--ocean-surface);">0</h3>
+                <p class="accent-text">% Degradation Rate</p>
+            </div>
+            <div class="glass-card text-center reveal-element">
+                <h3 class="counter" data-target="10" style="font-size: 3rem; color: var(--bioluminescent);">0</h3>
+                <p class="accent-text">Minute Doubling Time</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="margin-top: 50px; padding: 40px 10%; border-top: 1px solid var(--glass-border); text-align: center; background: var(--glass-bg);">
+        <div class="nav-logo" style="margin-bottom: 20px;">PET-DESTROYER</div>
+        <p class="accent-text">IIT Bombay iGEM 2026</p>
+        <p style="font-size: 0.9rem; color: var(--text-dim); margin-top: 10px;">
+            Department of Biosciences and Bioengineering, Powai, Mumbai 400076, India
+        </p>
+        <div style="margin-top: 20px;">
+            <a href="#" style="color: var(--bioluminescent); margin: 0 15px; text-decoration: none;">Twitter</a>
+            <a href="#" style="color: var(--bioluminescent); margin: 0 15px; text-decoration: none;">Instagram</a>
+            <a href="#" style="color: var(--bioluminescent); margin: 0 15px; text-decoration: none;">GitHub</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+</body>
+</html>

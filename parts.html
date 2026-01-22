@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts | IITB-iGEM 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@300;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ocean-waves"></div>
+    <div class="scroll-progress"></div>
+
+ <nav>
+    <div class="nav-logo">PET-DESTROYER</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        
+        <li class="dropdown">
+            <a href="description.html">Project ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="description.html">Description</a></li>
+                <li><a href="project_overview.html">Overview</a></li>
+                <li><a href="model.html">Modeling</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="parts.html">Parts</a></li>
+                <li><a href="notebook.html">Notebook</a></li>
+            </ul>
+        </li>
+
+        <li><a href="human-practices.html">Human Practices</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="collaboration.html">Collaboration</a></li>
+
+        <li class="dropdown">
+            <a href="team.html">Team ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="team.html">Members</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="judging_form.html" class="special-nav">Judging Form</a></li>
+    </ul>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+</nav>
+
+    <main class="container section">
+        <header class="text-center mb-3 fade-in">
+            <span class="accent-text">// GENETIC_INVENTORY</span>
+            <h1>BioBricks & Parts</h1>
+            <p>A comprehensive list of the DNA sequences engineered for the PET-Destroyer system.</p>
+        </header>
+
+        <section class="glass-card mb-3">
+            <h2 style="color: var(--bioluminescent);">Our Best New Part</h2>
+            <p>Our team developed <b>BBa_K2026001</b>, a codon-optimized PETase for <i>Vibrio natriegens</i> with an enhanced secretion signal (PelB).</p>
+            
+            
+            
+            <div class="safety-alert">
+                <h3>Design Note:</h3>
+                <p>We modified the wild-type <i>Is</i>PETase by introducing the <b>R280A mutation</b> to increase thermostability in the warm waters of the Arabian Sea.</p>
+            </div>
+        </section>
+
+        <section class="glass-card">
+            <h2 class="mb-2">Parts Registry Table</h2>
+            <div style="overflow-x: auto;">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Registry #</th>
+                            <th>Part Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                            <th>Length</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://parts.igem.org">BBa_K2026001</a></td>
+                            <td>vnPETase</td>
+                            <td>Coding</td>
+                            <td>Codon-optimized PETase for V. natriegens</td>
+                            <td>890 bp</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://parts.igem.org">BBa_K2026002</a></td>
+                            <td>P-Holin</td>
+                            <td>Regulatory</td>
+                            <td>Salinity-sensitive promoter for Kill-Switch</td>
+                            <td>150 bp</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://parts.igem.org">BBa_B0034</a></td>
+                            <td>RBS</td>
+                            <td>Device</td>
+                            <td>Strong Ribosome Binding Site</td>
+                            <td>12 bp</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 40px;">
+        <p class="accent-text">IIT Bombay iGEM 2026</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
